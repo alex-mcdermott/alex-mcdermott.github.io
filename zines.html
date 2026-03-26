@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zines | My Photography</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333333;
+            line-height: 1.6;
+        }
+        
+        /* Top Navigation Toolbar */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            border-bottom: 1px solid #eeeeee;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #333;
+            letter-spacing: 1px;
+        }
+        nav a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: #888;
+            font-size: 14px;
+            text-transform: uppercase;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #000;
+        }
+        nav a.active {
+            color: #000;
+            font-weight: bold;
+        }
+
+        /* Zines Store Layout */
+        .container {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+        .page-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .page-title h1 {
+            font-weight: normal;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        .page-title p {
+            color: #666;
+        }
+
+        /* The Grid for your Zines */
+        .zine-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+        }
+        
+        /* Individual Zine Card */
+        .zine-card {
+            text-align: left;
+        }
+        .zine-card img {
+            width: 100%;
+            height: auto;
+            background-color: #f9f9f9;
+            margin-bottom: 15px;
+            border: 1px solid #eee; /* Subtle border for white zine covers */
+        }
+        .zine-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+        }
+        .zine-desc {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .zine-price {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        /* The Buy Button */
+        .buy-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #111;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 3px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background 0.2s;
+        }
+        .buy-button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">Your Name</a>
+    <nav>
+        <a href="index.html">Portfolio</a>
+        <a href="zines.html" class="active">Zines</a>
+        <a href="about.html">About</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="page-title">
+        <h1>Self-Published Zines</h1>
+        <p>Printed locally. Ships worldwide.</p>
+    </div>
+
+    <div class="zine-grid">
+        
+        <div class="zine-card">
+            <img src="zine1-cover.jpg" alt="Cover of Zine 1">
+            <h2 class="zine-title">Late Night Diner Thoughts</h2>
+            <p class="zine-desc">36 pages. Black and white film photography documenting 24-hour diners across the midwest. Printed on heavy matte stock.</p>
+            <div class="zine-price">$15.00</div>
+            <a href="YOUR_STORE_LINK_HERE" class="buy-button">Buy Now</a>
+        </div>
+
+        <div class="zine-card">
+            <img src="zine2-cover.jpg" alt="Cover of Zine 2">
+            <h2 class="zine-title">Summer in the City</h2>
+            <p class="zine-desc">24 pages. Full color digital and 35mm mix. A study of heatwaves and urban shadows in July.</p>
+            <div class="zine-price">$12.00</div>
+            <a href="YOUR_STORE_LINK_HERE" class="buy-button">Buy Now</a>
+        </div>
+
+        </div>
+</div>
+
+</body>
+</html>
